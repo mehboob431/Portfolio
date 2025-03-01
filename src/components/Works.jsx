@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 
 import { styles } from "../styles";
 import { github } from "../assets";
+import { web } from "../assets"
 import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
@@ -15,9 +16,11 @@ const ProjectCard = ({
   tags,
   image,
   source_code_link,
+  web_link,
 }) => {
   return (
-    <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
+    // <div className="w-64 h-80">
+    <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)} >
       <Tilt
         options={{
           max: 45,
@@ -35,11 +38,23 @@ const ProjectCard = ({
 
           <div className='absolute inset-0 flex justify-end m-3 card-img_hover'>
             <div
-              onClick={() => window.open(source_code_link, "_blank")}
+                onClick={() => window.open(source_code_link, "_blank")}
               className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
             >
               <img
                 src={github}
+                alt='source code'
+                className='w-1/2 h-1/2 object-contain'
+              />
+            </div>
+          </div>
+          <div className='absolute inset-0 flex justify-start m-3 card-img_hover'>
+            <div
+             onClick={() => handleOpenLink(web_link)}
+              className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
+            >
+              <img
+                src={web}
                 alt='source code'
                 className='w-1/2 h-1/2 object-contain'
               />
@@ -64,7 +79,15 @@ const ProjectCard = ({
         </div>
       </Tilt>
     </motion.div>
+    // </div>
   );
+};
+const handleOpenLink = (url) => {
+  if (url) {
+    window.open(url, "_blank") || (window.location.href = url);
+  } else {
+    console.error("URL is undefined or invalid");
+  }
 };
 
 const Works = () => {

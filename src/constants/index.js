@@ -14,7 +14,6 @@ import {
   mongodb,
   git,
   figma,
-  docker,
   meta,
   starbucks,
   tesla,
@@ -23,6 +22,7 @@ import {
   jobit,
   tripguide,
   threejs,
+  tourse,
 } from "../assets";
 
 export const navLinks = [
@@ -42,7 +42,7 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Web Developer",
+    title: "Frontend Developer",
     icon: web,
   },
   {
@@ -54,7 +54,7 @@ const services = [
     icon: backend,
   },
   {
-    title: "Content Creator",
+    title: "DevOp Engineer",
     icon: creator,
   },
 ];
@@ -113,8 +113,8 @@ const technologies = [
 const experiences = [
   {
     title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
+    company_name: "North JS Tech",
+    icon: reactjs,
     iconBg: "#383E56",
     points: [
       "Developing and maintaining web applications using React.js and other related technologies.",
@@ -124,9 +124,20 @@ const experiences = [
     ],
   },
   {
+    title: "MERN Stack Developer",
+    company_name: "Shahi-Dewan",
+    icon: nodejs,
+    iconBg: "#E6DEDD",
+    points: [
+      "Developing and maintaining Web applications and Desktop application  using React ,node and electron.js  other related technologies.",
+      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality and deployed.",
+      "In this application provides a set of reusable UI components that map to native UI elements",
+    ],
+  },
+  {
     title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
+    company_name: "Shahi-Dewan",
+    icon: mobile,
     iconBg: "#E6DEDD",
     points: [
       "Developing and maintaining mobile applications using React-Native and other related technologies.",
@@ -136,25 +147,25 @@ const experiences = [
     ],
   },
   {
-    title: "Web Developer",
-    company_name: "Shopify",
+    title: "Full Stack Developer",
+    company_name: "Intellectual Rush",
     icon: shopify,
     iconBg: "#383E56",
 
     points: [
-      "Developing and maintaining E-commerce Website using Shopify and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+      "Developing and maintaining E-commerce Website using Wordpress and PHP.",
+      "Collaborating with cross-functional teams including designers,  and other developers to create high-quality ",
       "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Participating in code reviews and providing constructive feedback to other developers and clients.",
     ],
   },
   {
     title: "Full stack Developer",
-    company_name: "Meta",
+    company_name: "K2peck Technology",
     icon: meta,
     iconBg: "#E6DEDD",
     points: [
-      "Developing and maintaining web applications using React.js & Node.js  and other related technologies.",
+      "Developing and maintaining web applications using PHP & MySql  and other related technologies.",
       "Collaborating with cross-functional teams including designers, product manage and other developers to create high-quality products.",
       "Implementing responsive design and ensuring cross-browser compatibility.",
       "Participating in code reviews and providing constructive feedback to other developers.",
@@ -191,9 +202,9 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "E-commerce store",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Web-based platform that allows users to search, shopping product and manage Point of sale from various providers, providing a convenient and efficient solution for transportation needs.",
     tags: [
       {
         name: "react",
@@ -209,28 +220,33 @@ const projects = [
       },
     ],
     image: carrent,
-    // source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/mehboob431/E-commerse",
   },
   {
-    name: "Job IT",
+    name: "POS & Inventory",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "Web & Mobile and  Desktop application  that enables users,to  allowing customers to place orders directly from their table without needing a waiter, improving efficiency and customer experience.",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "node",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "mongodb",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "tailwind",
         color: "pink-text-gradient",
       },
     ],
     image: jobit,
-    // source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/mehboob431/Project-Shahi-Dewan",
+    web_link:"https://shahidewan.com/",
   },
   {
     name: "Trip Guide",
@@ -252,7 +268,57 @@ const projects = [
     ],
     image: tripguide,
     // source_code_link: "https://github.com/",
+    web_link:"http://www.hassansadparatreksandtours.com/"
   },
+  {
+    name: "POS & Inventory",
+    description:
+      "Web & Mobile and  Desktop application  that enables users,to  allowing customers to place orders directly from their table without needing a waiter, improving efficiency and customer experience.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "node",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "mongodb",
+        color: "green-text-gradient",
+      },
+      {
+        name: "tailwind",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: jobit,
+    // source_code_link: "https://github.com/",
+  },
+  {
+    name: "Tours Website",
+    description:
+      "Ilyas Skardu Tours specializes in curated travel experiences in Gilgit-Baltistan, offering packages to stunning destinations like Hunza, Skardu, and Khaplu. With options for both road and air travel, they provide personalized service and comfortable accommodations, ensuring unforgettable adventures tailored to your needs.",
+    tags: [
+      {
+        name: "nextjs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "supabase",
+        color: "green-text-gradient",
+      },
+      {
+        name: "css",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: tourse,
+    source_code_link: "https://github.com/",
+
+    web_link: "https://ilyasskardutours.com/",
+  },
+  
 ];
 
 export { services, technologies, experiences, testimonials, projects };

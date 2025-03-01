@@ -18,9 +18,9 @@ const Hero = () => {
             <span className="text-[#915EFF]">Mehboob Alam</span>
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            Develop Fully Dynamic | 3D visuals |
+            Develop Fully Dynamic | web applications 
             <br className="sm:block hidden" />
-            user interfaces | web applications
+            3D visuals | user interfaces | Devploy
           </p>
         </div>
       </div>
