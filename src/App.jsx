@@ -1,23 +1,36 @@
 import { BrowserRouter } from "react-router-dom";
+import { Suspense, lazy } from "react";
 
-import {About,Contact,Experience,Hero, Navbar,Tech,Works,StarsCanvas} from "./components";
+// Lazy load components
+const About = lazy(() => import("./components/About"));
+const Contact = lazy(() => import("./components/Contact"));
+const Experience = lazy(() => import("./components/Experience"));
+const Hero = lazy(() => import("./components/Hero"));
+const Navbar = lazy(() => import("./components/Navbar"));
+const Tech = lazy(() => import("./components/Tech"));
+const Works = lazy(() => import("./components/Works"));
 
 const App = () => {
   return (
     <BrowserRouter>
       <div className="relative z-0 bg-primary">
         <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
-          <Navbar />
-          <Hero />
+          <Suspense fallback={<div>Loading...</div>}>
+            <Navbar />
+            <Hero />
+          </Suspense>
         </div>
-        <About />
-        <Experience />
-        <Tech />
-        <Works />
-        {/* <Feedbacks /> */}
+        <Suspense fallback={<div>Loading...</div>}>
+          <About />
+          <Experience />
+          <Tech />
+          <Works />
+        </Suspense>
         <div className="relative z-0">
-          <Contact />
-          <StarsCanvas />
+          <Suspense fallback={<div>Loading...</div>}>
+            <Contact />
+            <StarsCanvas />
+          </Suspense>
         </div>
       </div>
     </BrowserRouter>
