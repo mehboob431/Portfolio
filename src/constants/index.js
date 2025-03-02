@@ -1,29 +1,4 @@
-import {
-  mobile,
-  backend,
-  creator,
-  web,
-  javascript,
-  typescript,
-  html,
-  css,
-  reactjs,
-  redux,
-  tailwind,
-  nodejs,
-  mongodb,
-  git,
-  figma,
-  meta,
-  starbucks,
-  tesla,
-  shopify,
-  carrent,
-  jobit,
-  tripguide,
-  threejs,
-  tourse,
-} from "../assets";
+import { mobile,backend,creator,web,javascript,typescript,html,css,reactjs,redux,tailwind,nodejs,mongodb,git,figma,meta,shopify,carrent,jobit,tripguide,threejs,tourse,} from "../assets";
 
 export const navLinks = [
   {
