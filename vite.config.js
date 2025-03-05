@@ -11,19 +11,6 @@ export default defineConfig({
   },
   build: {
     outDir: "dist", // Ensures Vercel detects the build output
-    rollupOptions: {
-      output: {
-        manualChunks(id) {
-          if (id.includes("node_modules")) {
-            return "vendor";
-          }
-        },
-      },
-    },
-    chunkSizeWarningLimit: 1500,
-  },
-  optimizeDeps: {
-    exclude: ["three-stdlib"], // Fix eval issue
   },
   publicDir: "public", // Ensure public assets are accessible
 });

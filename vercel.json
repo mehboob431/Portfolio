@@ -1,7 +1,11 @@
 {
-    "build": {
-      "outputDirectory": "dist",
-      "public": "public"
+  "build": {
+    "command": "npm run build"
+  },
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
     }
-  }
-  
+  ]
+}
