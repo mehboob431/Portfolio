@@ -1,24 +1,29 @@
-import { defineConfig } from "vite"; // Correct Import
+import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 
 export default defineConfig({
   plugins: [react()],
-  base: "/", // Local build ke liye "/" hona chahiye
+  base: "/", // Fix Vercel Deployment
   resolve: {
     alias: {
       "@": "/src",
     },
   },
   build: {
+    outDir: "dist", // Ensures Vercel detects the build output
     rollupOptions: {
       output: {
         manualChunks(id) {
           if (id.includes("node_modules")) {
-            return "vendor"; // Vendor chunk banane ke liye
+            return "vendor";
           }
         },
       },
     },
     chunkSizeWarningLimit: 1500,
   },
+  optimizeDeps: {
+    exclude: ["three-stdlib"], // Fix eval issue
+  },
+  publicDir: "public", // Ensure public assets are accessible
 });
