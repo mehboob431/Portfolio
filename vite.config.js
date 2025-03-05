@@ -1,9 +1,9 @@
-
-import { defineConfig } from "vite";
+import { defineConfig } from "vite"; // Correct Import
 import react from "@vitejs/plugin-react";
+
 export default defineConfig({
   plugins: [react()],
-  base: "/portfolio/",
+  base: "/", // Local build ke liye "/" hona chahiye
   resolve: {
     alias: {
       "@": "/src",
@@ -14,11 +14,11 @@ export default defineConfig({
       output: {
         manualChunks(id) {
           if (id.includes("node_modules")) {
-            return "vendor"; // Sab dependencies alag vendor chunk me daal dega
+            return "vendor"; // Vendor chunk banane ke liye
           }
         },
       },
     },
-    chunkSizeWarningLimit: 1500, // Warning ka limit badha sakte hain
+    chunkSizeWarningLimit: 1500,
   },
 });

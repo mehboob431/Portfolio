@@ -1,5 +1,6 @@
 import { BrowserRouter } from "react-router-dom";
 import { Suspense, lazy } from "react";
+// import StarsCanvas from "./components/StarsCanvas";
 
 // Lazy load components
 const About = lazy(() => import("./components/About"));
@@ -29,7 +30,7 @@ const App = () => {
         <div className="relative z-0">
           <Suspense fallback={<div>Loading...</div>}>
             <Contact />
-            <StarsCanvas />
+            {/* <StarsCanvas /> */}
           </Suspense>
         </div>
       </div>
