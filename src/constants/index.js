@@ -1,4 +1,4 @@
-import { mobile,backend,creator,web,javascript,typescript,html,css,reactjs,redux,tailwind,nodejs,mongodb,git,figma,meta,shopify,carrent,jobit,tripguide,threejs,tourse,} from "../assets";
+import { mobile,backend,creator,web,javascript,typescript,html,css,reactjs,redux,tailwind,nodejs,mongodb,git,figma,meta,shopify,carrent,jobit,tracking,tripguide,threejs,tourse, php, wordpress,} from "../assets";
 
 export const navLinks = [
   {
@@ -124,7 +124,7 @@ const experiences = [
   {
     title: "Full Stack Developer",
     company_name: "Intellectual Rush",
-    icon: shopify,
+    icon: wordpress,
     iconBg: "#383E56",
 
     points: [
@@ -137,7 +137,7 @@ const experiences = [
   {
     title: "Full stack Developer",
     company_name: "K2peck Technology",
-    icon: meta,
+    icon: php,
     iconBg: "#E6DEDD",
     points: [
       "Developing and maintaining web applications using PHP & MySql  and other related technologies.",
@@ -224,16 +224,20 @@ const projects = [
     web_link:"https://shahidewan.com/",
   },
   {
-    name: "Trip Guide",
+    name: "Hussan Sadpara Treks & Tours",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+     "This website offers adventure and cultural tours in Pakistan’s mountains, focusing on trekking, history, and eco-friendly tourism.",
     tags: [
       {
-        name: "nextjs",
+        name: "php",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "Mysql",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "bootstep",
         color: "green-text-gradient",
       },
       {
@@ -241,34 +245,27 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
+    image: tracking,
     // source_code_link: "https://github.com/",
     web_link:"http://www.hassansadparatreksandtours.com/"
   },
   {
-    name: "POS & Inventory",
+    name: "Intellectual Rush",
     description:
-      "Web & Mobile and  Desktop application  that enables users,to  allowing customers to place orders directly from their table without needing a waiter, improving efficiency and customer experience.",
+      "This Digital Marketing Agency provide, specializing in SEO, PPC, social media marketing, web design, and content marketing. They help businesses enhance online visibility, drive engagement.",
     tags: [
       {
-        name: "react",
+        name: "wordpress",
         color: "blue-text-gradient",
       },
       {
-        name: "node",
+        name: "php",
         color: "blue-text-gradient",
-      },
-      {
-        name: "mongodb",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwind",
-        color: "pink-text-gradient",
       },
     ],
-    image: jobit,
+    image: tripguide,
     // source_code_link: "https://github.com/",
+    web_link:"https://intellectualrush.com/"
   },
   {
     name: "Tours Website",
