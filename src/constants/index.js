@@ -252,7 +252,7 @@ const projects = [
   {
     name: "Intellectual Rush",
     description:
-      "This Digital Marketing Agency provide, specializing in SEO, PPC, social media marketing, web design, and content marketing. They help businesses enhance online visibility, drive engagement.",
+      "This Digital Marketing Agency provide, specializing in SEO, PPC, social media marketing, E-commerce service's, web design & development , and content marketing. They help businesses enhance online visibility, drive engagement.",
     tags: [
       {
         name: "wordpress",
@@ -270,7 +270,7 @@ const projects = [
   {
     name: "Tours Website",
     description:
-      "Ilyas Skardu Tours specializes in curated travel experiences in Gilgit-Baltistan, offering packages to stunning destinations like Hunza, Skardu, and Khaplu. With options for both road and air travel, they provide personalized service and comfortable accommodations, ensuring unforgettable adventures tailored to your needs.",
+      "Ilyas Skardu Tours specializes in curated travel experiences in Gilgit-Baltistan, offering packages to stunning destinations like Hunza, Skardu, and Khaplu. With options for both road and air travel, they provide personalized service and comfortable accommodations.",
     tags: [
       {
         name: "nextjs",
