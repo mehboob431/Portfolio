@@ -44,11 +44,15 @@ const About = () => {
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]">
-        I'm a MERN Stack Web developer with experience in JavaScript expertise in
-        frameworks like React.js ,next.js and Node.js. I'm a quick learner and
-        collaborate closely with clients to create efficient, scalable, and
-        user-friendly solutions that solve real-world problems. Let's work
-        together to bring your ideas to life!
+        I’m Mehboob Ali, a Computer Science graduate from the University of Baltistan and
+        a passionate MERN Stack Developer. I specialize in building responsive, scalable,
+        and user-friendly web applications using Next.js, React.js, Node.js, and Express.js.
+        With strong expertise in frontend architecture, state management, and backend development,
+        I ensure clean, efficient, and maintainable code. I am also proficient in working with PostgreSQL and MongoDB,
+        with hands-on experience in database design, API development, and server-side integration.
+        I enjoy collaborating with teams, solving real-world problems through technology,
+        and delivering high-quality projects on time.
+
       </motion.p>
 
       <div className="mt-20 flex flex-wrap gap-10">

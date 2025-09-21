@@ -1,4 +1,4 @@
-import { mobile,backend,creator,web,javascript,typescript,html,css,reactjs,redux,tailwind,nodejs,mongodb,git,figma,meta,shopify,carrent,jobit,tracking,tripguide,threejs,tourse, php, wordpress,} from "../assets";
+import { mobile, backend, creator, web, javascript, typescript, html, css, reactjs, redux, tailwind, nodejs, mongodb, git, figma, meta, shopify, easily, jobit, tracking, tripguide, threejs, tourse, php, wordpress, } from "../assets";
 
 export const navLinks = [
   {
@@ -177,16 +177,16 @@ const testimonials = [
 
 const projects = [
   {
-    name: "E-commerce store",
+    name: "EasilyTrip – Travel Booking Platform",
     description:
-      "Web-based platform that allows users to search, shopping product and manage Point of sale from various providers, providing a convenient and efficient solution for transportation needs.",
+      "A modern travel booking website with a responsive design and user-friendly interface, allowing users to easily explore and book hotels, flights, and holiday packages.",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "node",
         color: "green-text-gradient",
       },
       {
@@ -194,8 +194,9 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
+    image: easily,
     source_code_link: "https://github.com/mehboob431/E-commerse",
+    web_link: "https://easilytrip.com/",
   },
   {
     name: "POS & Inventory",
@@ -221,12 +222,12 @@ const projects = [
     ],
     image: jobit,
     source_code_link: "https://github.com/mehboob431/Project-Shahi-Dewan",
-    web_link:"https://shahidewan.com/",
+    web_link: "https://shahidewan.com/",
   },
   {
     name: "Hussan Sadpara Treks & Tours",
     description:
-     "This website offers adventure and cultural tours in Pakistan’s mountains, focusing on trekking, history, and eco-friendly tourism.",
+      "This website offers adventure and cultural tours in Pakistan’s mountains, focusing on trekking, history, and eco-friendly tourism.",
     tags: [
       {
         name: "php",
@@ -247,7 +248,7 @@ const projects = [
     ],
     image: tracking,
     // source_code_link: "https://github.com/",
-    web_link:"http://www.hassansadparatreksandtours.com/"
+    web_link: "http://www.hassansadparatreksandtours.com/"
   },
   {
     name: "Intellectual Rush",
@@ -265,7 +266,7 @@ const projects = [
     ],
     image: tripguide,
     // source_code_link: "https://github.com/",
-    web_link:"https://intellectualrush.com/"
+    web_link: "https://intellectualrush.com/"
   },
   {
     name: "Tours Website",
@@ -290,7 +291,7 @@ const projects = [
 
     web_link: "https://ilyasskardutours.com/",
   },
-  
+
 ];
 
 export { services, technologies, experiences, testimonials, projects };
